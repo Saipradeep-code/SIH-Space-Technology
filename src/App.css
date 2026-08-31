@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #06101f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: #06101f;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 5%;
+
+  background: #0b1728;
+
+  border-bottom: 1px solid #263c56;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  color: #9eb1c7;
+  margin-bottom: 0;
+}
+
+.live-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  background: #00e676;
+  border-radius: 50%;
+}
+
+main {
+  padding: 30px 5%;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #0c1b2e;
+
+  border: 1px solid #243c58;
+
+  border-radius: 12px;
+
+  padding: 22px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.health-score {
+  font-size: 65px;
+  margin: 15px 0;
+}
+
+.health-score span {
+  font-size: 24px;
+  color: #8fa3b8;
+}
+
+.label {
+  color: #91a6bc;
+  font-size: 13px;
+}
+
+.healthy {
+  color: #00e676;
+  font-weight: bold;
+}
+
+.warning {
+  color: #ffca28;
+  font-weight: bold;
+}
+
+.critical {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+.section-title {
+  margin-top: 45px;
+  margin-bottom: 18px;
+}
+
+.telemetry-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 15px;
+}
+
+.telemetry-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.telemetry-card h2 {
+  margin: 5px 0;
+}
+
+.telemetry-icon {
+  font-size: 30px;
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+button {
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.danger {
+  background: #b52c2c;
+}
+
+.reset {
+  background: #16734d;
+}
+
+.anomaly-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.anomaly-card {
+  border: 1px solid #c63d3d;
+}
+
+.normal-panel {
+  border: 1px solid #1b8a5a;
+}
+
+@media (max-width: 1000px) {
+
+  .telemetry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telemetry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anomaly-container {
+    grid-template-columns: 1fr;
+  }
+
+}
