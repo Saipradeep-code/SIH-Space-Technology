@@ -51,3 +51,66 @@ Failure Injection System
 ❤️ Satellite health monitoring
 🔔 Real-time alerts
 🔮 AI-ready predictive maintenance architecture
+
+What Makes Our Project Unique?
+
+This is your strongest answer.
+
+Most basic monitoring systems do:
+
+Show telemetry values
+
+SATGUARD AI aims to do:
+
+Monitor
+   ↓
+Detect
+   ↓
+Understand
+   ↓
+Predict
+   ↓
+Recommend
+Your uniqueness points:
+1️⃣ Digital Twin
+
+We simulate a realistic CubeSat environment.
+
+2️⃣ Multi-Subsystem Monitoring
+
+We don't monitor just one value.
+
+We combine:
+
+Power
+Battery
+Thermal
+Communication
+Computing
+3️⃣ Real-Time Failure Simulation
+
+We can deliberately introduce failures and observe:
+
+Failure
+   ↓
+Telemetry changes
+   ↓
+Health decreases
+   ↓
+Anomaly detected
+   ↓
+Recommended action
+
+This makes the prototype demonstrable.
+
+4️⃣ Predictive Approach
+
+The future system will not only say:
+
+❌ "The satellite has failed."
+
+It aims to say:
+
+⚠️ "The satellite is showing a pattern that may lead to failure."
+
+That is predictive maintenance.
