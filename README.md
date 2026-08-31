@@ -1,16 +1,53 @@
-# React + Vite
+🛰️ SATGUARD AI
+Intelligent Satellite Health Monitoring & Anomaly Detection System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SATGUARD AI is a prototype system designed to monitor the health of satellites in real time using telemetry data. The system detects abnormal behaviour, identifies possible subsystem failures, and provides alerts through an interactive monitoring dashboard.
 
-Currently, two official plugins are available:
+🚀 Problem Statement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Satellites operate in harsh environments and generate large amounts of telemetry data continuously. Detecting abnormal behaviour manually can be difficult and may delay the identification of critical failures.
 
-## React Compiler
+SATGUARD AI aims to provide an intelligent monitoring system that can:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Monitor satellite telemetry in real time
+Detect abnormal behaviour
+Identify possible failure conditions
+Provide instant alerts
+Visualize satellite health through a dashboard
+💡 Our Solution
 
-## Expanding the ESLint configuration
+We developed a virtual 6U CubeSat simulation that continuously generates satellite telemetry data.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The system monitors parameters such as:
+
+☀️ Solar Power
+⚡ Voltage
+🌡️ Temperature
+📡 Signal Strength
+💻 CPU Usage
+
+The system deliberately simulates different failure scenarios and detects anomalies based on abnormal telemetry values.
+
+🛠️ Technologies Used
+Frontend
+React.js
+Vite
+Recharts
+Lucide React
+Backend
+Node.js
+Express.js
+REST API
+Simulation
+Virtual CubeSat Telemetry Generator
+Failure Injection System
+
+📊 Key Features
+📡 Real-time telemetry monitoring
+🚨 Anomaly detection
+🛰️ Virtual CubeSat simulation
+⚠️ Failure injection
+📈 Telemetry visualization
+❤️ Satellite health monitoring
+🔔 Real-time alerts
+🔮 AI-ready predictive maintenance architecture
