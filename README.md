@@ -1,116 +1,136 @@
-🛰️ SATGUARD AI
-Intelligent Satellite Health Monitoring & Anomaly Detection System
+# 🛰️ SATGUARD AI
+## Intelligent Satellite Health Monitoring & Anomaly Detection System
 
-SATGUARD AI is a prototype system designed to monitor the health of satellites in real time using telemetry data. The system detects abnormal behaviour, identifies possible subsystem failures, and provides alerts through an interactive monitoring dashboard.
+<p align="center">
 
-🚀 Problem Statement
+<img src="https://img.shields.io/badge/SIH%202026-SATGUARD%20AI-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Theme-Space%20Technology-purple?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Category-Software-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge" />
 
-Satellites operate in harsh environments and generate large amounts of telemetry data continuously. Detecting abnormal behaviour manually can be difficult and may delay the identification of critical failures.
+</p>
 
-SATGUARD AI aims to provide an intelligent monitoring system that can:
+<p align="center">
 
-Monitor satellite telemetry in real time
-Detect abnormal behaviour
-Identify possible failure conditions
-Provide instant alerts
-Visualize satellite health through a dashboard
-💡 Our Solution
+<img src="https://img.shields.io/badge/React.js-Frontend-61DAFB?style=for-the-badge&logo=react" />
+<img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite" />
+<img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js" />
+<img src="https://img.shields.io/badge/Express.js-REST%20API-black?style=for-the-badge&logo=express" />
+<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" />
+<img src="https://img.shields.io/badge/Recharts-Visualization-8884D8?style=for-the-badge" />
 
-We developed a virtual 6U CubeSat simulation that continuously generates satellite telemetry data.
+</p>
 
-The system monitors parameters such as:
+---
 
-☀️ Solar Power
-⚡ Voltage
-🌡️ Temperature
-📡 Signal Strength
-💻 CPU Usage
+# 🛰️ Project Overview
 
-The system deliberately simulates different failure scenarios and detects anomalies based on abnormal telemetry values.
+**SATGUARD AI** is an intelligent satellite health monitoring and anomaly detection platform designed to continuously monitor satellite telemetry, identify abnormal operating conditions, detect potential subsystem failures, and provide real-time alerts through an interactive monitoring dashboard.
 
-🛠️ Technologies Used
-Frontend
-React.js
-Vite
-Recharts
-Lucide React
-Backend
-Node.js
-Express.js
-REST API
-Simulation
-Virtual CubeSat Telemetry Generator
-Failure Injection System
+Satellites continuously generate telemetry from multiple onboard subsystems. These telemetry parameters provide important information about the spacecraft's operational condition.
 
-📊 Key Features
-📡 Real-time telemetry monitoring
-🚨 Anomaly detection
-🛰️ Virtual CubeSat simulation
-⚠️ Failure injection
-📈 Telemetry visualization
-❤️ Satellite health monitoring
-🔔 Real-time alerts
-🔮 AI-ready predictive maintenance architecture
+However, continuously monitoring and interpreting large volumes of telemetry data can be difficult for human operators.
 
-What Makes Our Project Unique?
+SATGUARD AI addresses this challenge by providing an intelligent software platform that transforms raw telemetry into meaningful health information.
 
-This is your strongest answer.
+The system uses a **Virtual 6U CubeSat Digital Twin** to simulate satellite operations and generate telemetry in real time.
 
-Most basic monitoring systems do:
+The platform monitors parameters such as:
 
-Show telemetry values
+- ☀️ Solar Power
+- ⚡ Voltage
+- 🌡️ Temperature
+- 📡 Signal Strength
+- 💻 CPU Usage
+- 🔋 Power and subsystem health
 
-SATGUARD AI aims to do:
+The system can also deliberately introduce abnormal conditions through a **Failure Injection System**, allowing the complete anomaly detection and alert pipeline to be demonstrated in a controlled environment.
 
-Monitor
-   ↓
-Detect
-   ↓
-Understand
-   ↓
-Predict
-   ↓
-Recommend
-Your uniqueness points:
-1️⃣ Digital Twin
+---
 
-We simulate a realistic CubeSat environment.
+# 🎯 Problem Statement
 
-2️⃣ Multi-Subsystem Monitoring
+Satellites operate in harsh and unpredictable environments.
 
-We don't monitor just one value.
+They are exposed to:
 
-We combine:
+- Extreme temperature variations
+- Radiation
+- Power fluctuations
+- Communication interruptions
+- Hardware degradation
+- Computational limitations
+- Environmental disturbances
 
-Power
-Battery
-Thermal
-Communication
-Computing
-3️⃣ Real-Time Failure Simulation
+At the same time, satellites continuously generate telemetry data from different subsystems.
 
-We can deliberately introduce failures and observe:
+A satellite operator may need to monitor hundreds or thousands of telemetry parameters over long periods.
 
-Failure
-   ↓
-Telemetry changes
-   ↓
-Health decreases
-   ↓
-Anomaly detected
-   ↓
-Recommended action
+Traditional monitoring approaches often depend heavily on predefined thresholds and manual observation.
 
-This makes the prototype demonstrable.
+This can create several challenges:
 
-4️⃣ Predictive Approach
+### 1. Large Volume of Telemetry
 
-The future system will not only say:
+Satellites generate telemetry continuously, making manual monitoring difficult.
 
-❌ "The satellite has failed."
+### 2. Delayed Failure Detection
 
-It aims to say:
+A subsystem may gradually move away from its normal operating behaviour before reaching a critical threshold.
 
-⚠️ "The satellite is showing a pattern that may lead to failure."
+### 3. Multiple Subsystems
 
-That is predictive maintenance.
+Power, thermal, communication, and computing systems can interact with each other.
+
+### 4. Hidden Anomalies
+
+Some failures may not immediately produce extreme values. Instead, they may appear as unusual patterns over time.
+
+### 5. Need for Predictive Maintenance
+
+Detecting a failure after it happens is not always sufficient.
+
+A better system should identify warning patterns before the failure becomes critical.
+
+---
+
+# 💡 Our Solution
+
+SATGUARD AI introduces an intelligent satellite monitoring architecture based on a **Virtual CubeSat Digital Twin**.
+
+The system continuously generates satellite telemetry and processes it through an anomaly detection pipeline.
+
+The overall workflow is:
+
+```text
+                  ┌─────────────────────┐
+                  │ Virtual 6U CubeSat  │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │ Telemetry Generator │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │ Telemetry Processing│
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │ Anomaly Detection   │
+                  └──────────┬──────────┘
+                             │
+                    ┌────────┴────────┐
+                    ▼                 ▼
+             ┌─────────────┐   ┌─────────────┐
+             │ Health       │   │ Alert       │
+             │ Assessment   │   │ Generation  │
+             └──────┬──────┘   └──────┬──────┘
+                    │                 │
+                    └────────┬────────┘
+                             ▼
+                  ┌─────────────────────┐
+                  │ Monitoring Dashboard│
+                  └─────────────────────┘
